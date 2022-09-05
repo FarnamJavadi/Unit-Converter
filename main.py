@@ -196,5 +196,8 @@ elif change == 4:
         print("{} H is equal to {} day".format(Time_value, Time_value / 24))
     else:
         print("Sorry, Please type correct number from 1 to 7.")
+
+# ==== Type 5 (Speed) ====
+
 else:
     print("Sorry, Please type correct number from 1 to 4.")
