@@ -66,7 +66,9 @@ elif change == 2:
             7: "Milligram to Gram",
             8: "Gram to Milligram",
             9: "kilogram to pound (lb)",
-            10: "pound (lb) to Kilogram"
+            10: "pound (lb) to Kilogram",
+            11: "Micrograms to gram"
+            12:
         }
 
     # ==== for getting number of conversion ====
@@ -96,6 +98,8 @@ elif change == 2:
         print("{} Kg is equal to {} lb".format(mass_value, mass_value * 2.20462))
     elif mass_convert == 10:
         print("{} lb is equal to {} kg".format(mass_value, mass_value / 2.20462))
+    elif mass_convert == 11:
+        print("{} μg is equal to {} g".format(mass_value, mass_value / 1e+6))
     else:
         print("Sorry, Please type correct number from 1 to 10.")
 
