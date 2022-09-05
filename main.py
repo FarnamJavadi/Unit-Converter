@@ -1,13 +1,19 @@
 print("Unit Converter")
 
 # ==== to choose type of conversion ====
-unit_change = {1: "Length", 2: "Mass",  3: "Temperature"}
+unit_change = \
+    {
+        1: "Length",
+        2: "Mass",
+        3: "Temperature",
+        4: "Time"
+    }
 
 # ==== for getting number of type ====
 for keys, values in unit_change.items():
     print("{:2}. {}".format(keys, values))
 
-change = int(input("\nWhich type of conversion you want to do from 1 to 3: "))
+change = int(input("\nWhich type of conversion you want to do from 1 to 4: "))
 
 # ==== Type 1 (length) ====
 if change == 1:
@@ -67,8 +73,8 @@ elif change == 2:
             8: "Gram to Milligram",
             9: "kilogram to pound (lb)",
             10: "pound (lb) to Kilogram",
-            11: "Micrograms to gram"
-            12:
+            11: "Micrograms to gram",
+            12: "Micrograms to Kilogram"
         }
 
     # ==== for getting number of conversion ====
@@ -100,11 +106,13 @@ elif change == 2:
         print("{} lb is equal to {} kg".format(mass_value, mass_value / 2.20462))
     elif mass_convert == 11:
         print("{} μg is equal to {} g".format(mass_value, mass_value / 1e+6))
+    elif mass_convert == 12:
+        print("{} μg is equal to {} Kg".format(mass_value, mass_value / 1e+9))
     else:
         print("Sorry, Please type correct number from 1 to 10.")
 
 # ==== Type 3 (Temperature) ====
-elif change == 2:
+elif change == 3:
     print("You chose type Temperature")
     print("")
     Temp_dict = \
@@ -138,5 +146,25 @@ elif change == 2:
         print("{} K is equal to {} F".format(Temp_value, (Temp_value - 273.15) * 9.5 + 32))
     else:
         print("Sorry, Please type correct number from 1 to 6.")
+
+# ==== Type 4 (Time) ====
+elif change == 4:
+    print("You chose type Time")
+    print("")
+    Time_dict = \
+        {
+            1: "Second to Minute",
+            2: "Second to Hour",
+            3: "Minute to Hour",
+            4: "Hour to Minute",
+            5: "Day to Hour",
+            6: "Hour to Day"
+        }
+
+    # ==== for getting number of conversion ====
+    Time_value = float(input("Enter a number to convert: "))
+    for keys, values in Time_dict.items():
+        print("{:2}. {}".format(keys, values))
+    Time_convert = int(input("\nWhich conversion you want to do from 1 to 6: "))
 else:
     print("Sorry, Please type correct number from 1 to 4.")
