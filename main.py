@@ -40,4 +40,4 @@ elif convert == 10:
 else:
     print("Sorry, Please type correct number from 1 to 10.")
 
-print("Thank You for using our unit converter!")
+print("Thank You for using our unit converter! good bye!")
