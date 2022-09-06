@@ -7,14 +7,15 @@ unit_change = \
         1: "Length",
         2: "Mass",
         3: "Temperature",
-        4: "Time"
+        4: "Time",
+        5: "Spead"
     }
 
 # ==== for getting number of type ====
 for keys, values in unit_change.items():
     print("{:2}. {}".format(keys, values))
 
-change = int(input("\nWhich type of conversion you want to do from 1 to 4: "))
+change = int(input("\nWhich type of conversion you want to do from 1 to 5: "))
 
 # ==== Type 1 (length) ====
 if change == 1:
@@ -198,6 +199,42 @@ elif change == 4:
         print("Sorry, Please type correct number from 1 to 7.")
 
 # ==== Type 5 (Speed) ====
+elif change == 5:
+    print(">>> You chose type Spead")
+    print("")
+    Spead_dict = \
+        {
+            1: "Mile per hour to kilometer per hour",
+            2: "Kilometer per hour to Mile per hour",
+            3: "Mile per hour to Meter per Second",
+            4: "Meter per Second to Mile per hour",
+            5: "Kilometer per hour to Meter per Second",
+            6: "Meter per Second to Kilometer per hour"
+        }
+
+    # ==== for getting number of conversion ====
+    print("==========================")
+    Spead_value = float(input("- Enter a number to convert: "))
+    for keys, values in Spead_dict.items():
+        print("{:2}. {}".format(keys, values))
+    Spead_convert = int(input("\nWhich conversion you want to do from 1 to 6: "))
+
+    # ==== converting ====
+    if Spead_convert == 1:
+        print("{} Ml is equal to {} Klm".format(Spead_value, Spead_value * 1.609))
+    elif Spead_convert == 2:
+        print("{} Klm is equal to {} Ml".format(Spead_value, Spead_value / 1.609))
+    elif Spead_convert == 3:
+        print("{} Ml is equal to {} M".format(Spead_value, Spead_value / 2.237))
+    elif Spead_convert == 4:
+        print("{} M is equal to {} Ml".format(Spead_value, Spead_value * 2.237))
+    elif Spead_convert == 5:
+        print("{} Klm is equal to {} M".format(Spead_value, Spead_value / 3.6))
+    elif Spead_convert == 6:
+        print("{} M is equal to {} Klm ".format(Spead_value, Spead_value * 3.6))
+    else:
+        print("Sorry, Please type correct number from 1 to 6.")
+
 
 else:
     print("Sorry, Please type correct number from 1 to 4.")
