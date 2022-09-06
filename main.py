@@ -270,6 +270,40 @@ elif change == 6:
     else:
         print("Sorry, Please type correct number from 1 to 6.")
 
+# ==== Type 7 (Pressure) ====
+elif change == 4:
+    print(">>> You chose type Pressure")
+    print("")
+    Pressure_dict = \
+        {
+            1: "Bar to Pascal",
+            2: "Bar to Standard atmosphere",
+            3: "Pascal to Bar",
+            4: "Pascal to Standard atmosphere",
+            5: "Standard atmosphere to Pascal",
+            6: "Standard atmosphere to Bar"
+        }
+    # ==== for getting number of conversion ====
+    print("==========================")
+    Pressure_value = float(input("- Enter a number to convert: "))
+    for keys, values in Pressure_dict.items():
+        print("{:2}. {}".format(keys, values))
+    Pressure_convert = int(input("\nWhich conversion you want to do from 1 to 6: "))
 
+    # ==== converting ====
+    if Pressure_convert == 1:
+        print("{} Bar is equal to {} P".format(Pressure_value, Pressure_value * 100000))
+    elif Pressure_convert == 2:
+        print("{} Bar is equal to {} atm".format(Pressure_value, Pressure_value / 1.013))
+    elif Pressure_convert == 3:
+        print("{} P is equal to {} Bar".format(Pressure_value, Pressure_value / 100000))
+    elif Pressure_convert == 4:
+        print("{} P is equal to {} atm".format(Pressure_value, Pressure_value / 101300))
+    elif Pressure_convert == 5:
+        print("{} atm is equal to {} P".format(Pressure_value, Pressure_value * 101300))
+    elif Pressure_convert == 6:
+        print("{} atm is equal to {} Bar".format(Pressure_value, Pressure_value * 1.013))
+    else:
+        print("Sorry, Please type correct number from 1 to 6.")
 else:
     print("Sorry, Please type correct number from 1 to 4.")
