@@ -9,14 +9,15 @@ unit_change = \
         3: "Temperature",
         4: "Time",
         5: "Spead",
-        6: "Energy"
+        6: "Energy",
+        7: "Pressure"
     }
 
 # ==== for getting number of type ====
 for keys, values in unit_change.items():
     print("{:2}. {}".format(keys, values))
 
-change = int(input("\nWhich type of conversion you want to do from 1 to 6: "))
+change = int(input("\nWhich type of conversion you want to do from 1 to 7: "))
 
 # ==== Type 1 (length) ====
 if change == 1:
