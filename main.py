@@ -272,7 +272,7 @@ elif change == 6:
         print("Sorry, Please type correct number from 1 to 6.")
 
 # ==== Type 7 (Pressure) ====
-elif change == 4:
+elif change == 7:
     print(">>> You chose type Pressure")
     print("")
     Pressure_dict = \
