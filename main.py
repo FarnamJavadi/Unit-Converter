@@ -8,14 +8,15 @@ unit_change = \
         2: "Mass",
         3: "Temperature",
         4: "Time",
-        5: "Spead"
+        5: "Spead",
+        6: "Energy"
     }
 
 # ==== for getting number of type ====
 for keys, values in unit_change.items():
     print("{:2}. {}".format(keys, values))
 
-change = int(input("\nWhich type of conversion you want to do from 1 to 5: "))
+change = int(input("\nWhich type of conversion you want to do from 1 to 6: "))
 
 # ==== Type 1 (length) ====
 if change == 1:
@@ -232,6 +233,40 @@ elif change == 5:
         print("{} Km is equal to {} M".format(Spead_value, Spead_value / 3.6))
     elif Spead_convert == 6:
         print("{} M is equal to {} Km ".format(Spead_value, Spead_value * 3.6))
+    else:
+        print("Sorry, Please type correct number from 1 to 6.")
+
+# ==== Type 6 (Energy) ====
+elif change == 6:
+    print(">>> You chose type Energy")
+    print("")
+    Energy_dict = \
+        {1: "Joule to Kilojoule",
+         2: "Kilojoule to Joule",
+         3: "Joule to Kilocalorie",
+         4: "Kilocalorie to Joule",
+         5: "Kilojoule to Kilocalorie",
+         6: "Kilocalorie to Kilojoule"
+         }
+
+    # ==== for getting number of conversion ====
+    print("==========================")
+    Energy_value = float(input("- Enter a number to convert: "))
+    for keys, values in Energy_dict.items():
+        print("{:2}. {}".format(keys, values))
+    Energy_convert = int(input("\nWhich conversion you want to do from 1 to 6: "))
+    if Energy_convert == 1:
+        print("{} J is equal to {} Kj".format(Energy_value, Energy_value / 1000))
+    elif Energy_convert == 2:
+        print("{} Kj is equal to {} J".format(Energy_value, Energy_value * 1000))
+    elif Energy_convert == 3:
+        print("{} J is equal to {} Kc".format(Energy_value, Energy_value / 4184))
+    elif Energy_convert == 4:
+        print("{} Kc is equal to {} J".format(Energy_value, Energy_value * 4184))
+    elif Energy_convert == 5:
+        print("{} Kj is equal to {} Kc".format(Energy_value, Energy_value / 4.184))
+    elif Energy_convert == 6:
+        print("{} Kc is equal to {} Kj".format(Energy_value, Energy_value * 4.184))
     else:
         print("Sorry, Please type correct number from 1 to 6.")
 
