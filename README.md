@@ -35,5 +35,5 @@ With the `unit conversion` file, you can perform all types of unit conversions s
 # How to use
 run `main.py` without any requirments.
 # Contributors
-#### [Sina Hajizadeh](https://github.com/sinahajizadeh)
-#### [Farnam Javadi](https://www.farnamjavadi.com)
+##### [Sina Hajizadeh](https://github.com/sinahajizadeh)
+##### [Farnam Javadi](https://www.farnamjavadi.com)
