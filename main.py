@@ -221,17 +221,17 @@ elif change == 5:
 
     # ==== converting ====
     if Spead_convert == 1:
-        print("{} Ml is equal to {} Klm".format(Spead_value, Spead_value * 1.609))
+        print("{} Ml is equal to {} Km".format(Spead_value, Spead_value * 1.609))
     elif Spead_convert == 2:
-        print("{} Klm is equal to {} Ml".format(Spead_value, Spead_value / 1.609))
+        print("{} Km is equal to {} Ml".format(Spead_value, Spead_value / 1.609))
     elif Spead_convert == 3:
         print("{} Ml is equal to {} M".format(Spead_value, Spead_value / 2.237))
     elif Spead_convert == 4:
         print("{} M is equal to {} Ml".format(Spead_value, Spead_value * 2.237))
     elif Spead_convert == 5:
-        print("{} Klm is equal to {} M".format(Spead_value, Spead_value / 3.6))
+        print("{} Km is equal to {} M".format(Spead_value, Spead_value / 3.6))
     elif Spead_convert == 6:
-        print("{} M is equal to {} Klm ".format(Spead_value, Spead_value * 3.6))
+        print("{} M is equal to {} Km ".format(Spead_value, Spead_value * 3.6))
     else:
         print("Sorry, Please type correct number from 1 to 6.")
 
