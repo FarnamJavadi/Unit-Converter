@@ -121,7 +121,7 @@ elif change == 2:
     elif mass_convert == 12:
         print("{} μg is equal to {} Kg".format(mass_value, mass_value / 1e+9))
     else:
-        print("Sorry, Please type correct number from 1 to 10.")
+        print("Sorry, Please type correct number from 1 to 12.")
 
 # ==== Type 3 (Temperature) ====
 elif change == 3:
