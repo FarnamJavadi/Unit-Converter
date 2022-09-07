@@ -307,4 +307,4 @@ elif change == 7:
     else:
         print("Sorry, Please type correct number from 1 to 6.")
 else:
-    print("Sorry, Please type correct number from 1 to 4.")
+    print("Sorry, Please type correct number from 1 to 7.")
