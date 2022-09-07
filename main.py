@@ -63,10 +63,10 @@ if change == 1:
         print("{} feet is equal to {} cm.".format(length_value, length_value * 30.48))
     elif length_convert == 9:
         print("{} KM is equal to {} mile".format(length_value, length_value / 1.609))
-    elif length_convert == 9:
+    elif length_convert == 10:
         print("{} mile is equal to {} KM".format(length_value, length_value * 1.609))
     else:
-        print("Sorry, Please type correct number from 1 to 8.")
+        print("Sorry, Please type correct number from 1 to 10.")
 
 # ==== Type 2 (Mass) ====
 elif change == 2:
@@ -121,7 +121,7 @@ elif change == 2:
     elif mass_convert == 12:
         print("{} μg is equal to {} Kg".format(mass_value, mass_value / 1e+9))
     else:
-        print("Sorry, Please type correct number from 1 to 10.")
+        print("Sorry, Please type correct number from 1 to 12.")
 
 # ==== Type 3 (Temperature) ====
 elif change == 3:
